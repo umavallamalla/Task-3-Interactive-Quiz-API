@@ -1,0 +1,87 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background: linear-gradient(120deg, #74ebd5, #ACB6E5);
+}
+
+/* Header */
+header {
+  position: sticky; top: 0; z-index: 1000;
+  background: #fff; display: flex; justify-content: space-between;
+  align-items: center; padding: 15px 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.logo { font-size: 1.6rem; font-weight: bold; color: #333; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a {
+  text-decoration: none; color: #333; font-weight: 500;
+  padding: 5px 10px; border-radius: 5px; transition: 0.3s;
+}
+nav a:hover, nav a.active { background: #f4a8ef; color: #000; }
+
+/* Sections */
+.section {
+  min-height: 100vh; display: flex; justify-content: center; align-items: center;
+  text-align: center; background-size: cover; background-position: center;
+}
+.overlay {
+  background: rgba(0,0,0,0.6); padding: 40px; border-radius: 15px;
+  width: 90%; max-width: 650px;
+}
+.section h1, .section h2 { margin-bottom: 20px; }
+
+/* Backgrounds */
+.home-bg { background-image: url('https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg'); }
+.quiz-bg { background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80'); }
+.api-bg { background-image: url('https://img.freepik.com/free-vector/emoji-summer-background_79603-1589.jpg'); }
+.feedback-bg { background-image: url('https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg'); }
+
+/* Quiz */
+.quiz-box { text-align: left; }
+.quiz-question { margin-bottom: 25px; }
+
+/* Option cards */
+.option-card {
+  display: block;
+  margin: 12px 0;
+  cursor: pointer;
+  position: relative;
+}
+.option-card input { display: none; }
+.option-card span {
+  display: block; padding: 15px; background: #1e1e1e;
+  border-radius: 10px; border: 2px solid transparent;
+  transition: all 0.3s ease; text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.option-card span:hover {
+  transform: scale(1.1);
+  border-color: #74ebd5;
+}
+.option-card input:checked + span {
+  background: #74ebd5; color: #000; font-weight: bold;
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+  background: #74ebd5; border: none; padding: 10px 20px;
+  font-weight: bold; color: #000; cursor: pointer;
+  border-radius: 8px; transition: 0.3s; margin-top: 15px;
+}
+.btn:hover { background: #ea431e; }
+
+/* Form */
+input, textarea {
+  width: 80%; padding: 10px; border: none; border-radius: 5px;
+  margin: 8px 0; font-size: 1em;
+}
+textarea { resize: none; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay { padding: 25px; }
+  nav ul { flex-direction: column; gap: 10px; }
+}
