@@ -1,6 +1,5 @@
 # Task-3-Interactive-Quiz-API
 Internship Task 3 project – Interactive Quiz + API Integration
-# Task 3 – Interactive Quiz & API Integration  
 
 This project was developed as part of my **45-Days Web Development Internship at ApexPlanet**.  
 It includes:  
